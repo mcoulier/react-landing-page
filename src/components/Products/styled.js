@@ -3,15 +3,14 @@ import styled from "styled-components";
 import { Button } from "../styles/Button";
 
 export const SectionContainer = styled.section`
-  background-color: #5c9163;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  background-color: ${(props) => props.theme.colors.tertiary};
   padding: ${(props) => props.theme.spacing.normal};
   margin-top: ${(props) => props.theme.spacing.normal};
   margin-bottom: ${(props) => props.theme.spacing.normal};
 `;
 
-export const SectionTitle = styled.h3`
-  color: #fff;
+export const SectionTitle = styled.h2`
+  color: ${(props) => props.theme.colors.accent};
   text-align: center;
   text-transform: uppercase;
 `;
@@ -41,19 +40,24 @@ export const CardImage = styled.img`
   width: 250px;
   height: 130px;
   padding-top: 10px;
+  padding-bottom: ${(props) => props.theme.spacing.normal};
 `;
 
-export const CardTitle = styled.h3``;
+export const CardTitle = styled.h3`
+  padding-bottom: ${(props) => props.theme.spacing.large};
+  color: ${(props) => props.theme.colors.primary};
+`;
 
-export const CardButton = styled(Button)``;
+export const CardButton = styled(Button)`
+  font-weight: bold;
+`;
 
 export const CardLearnButton = styled(Button)`
   margin-top: ${(props) => props.theme.spacing.small};
-  border: 1px solid #cc322b;
-  background: #fff;
-  color: #cc322b;
+  background: ${(props) => props.theme.colors.accent};
+  color: #000;
   &:hover {
-    background: #cc322b;
+    opacity: 1.2;
     cursor: pointer;
     color: #fff;
   }

@@ -4,8 +4,8 @@ import { HeroButton, MainContainer, Subtitle, Title } from "./styled";
 export default function Hero() {
   return (
     <MainContainer>
-      <Title>Synths</Title>
-      <Subtitle>Baseline</Subtitle>
+      <Title>Synth 70</Title>
+      <Subtitle>Taking you back to the future</Subtitle>
       <HeroButton>Sign up</HeroButton>
     </MainContainer>
   );

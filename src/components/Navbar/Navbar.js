@@ -6,7 +6,7 @@ import vinyl from "../../assets/vinyl.png";
 export default function Navbar() {
   return (
     <Nav>
-      <NavLogo src={vinyl} alt="" height={45} width={45} />
+      <NavLogo src={vinyl} alt="" />
       <Button>Buy Me</Button>
     </Nav>
   );

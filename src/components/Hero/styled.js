@@ -17,12 +17,11 @@ export const MainContainer = styled.section`
     content: "";
     position: absolute;
     background-size: cover;
-    background-repeat: no-repeat;
     background-image: url(${hero});
-    background-position: bottom right;
+    background-position: bottom;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.5;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     transform: scaleX(-1);
@@ -33,15 +32,16 @@ export const Title = styled.h1`
   text-align: center;
   margin: 0;
   font-size: 60px;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.alert};
   padding-top: ${(props) => props.theme.spacing.normal};
   position: relative;
   text-transform: uppercase;
+  text-decoration: underline overline;
 `;
 
-export const Subtitle = styled.h3`
-  font-size: 25px;
-  color: #ffffff;
+export const Subtitle = styled.h2`
+  font-size: 22px;
+  color: ${(props) => props.theme.colors.secondary};
   text-align: center;
   position: relative;
 `;

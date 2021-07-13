@@ -9,28 +9,30 @@ import {
   SectionContainer,
   SectionTitle,
 } from "./styled";
-import moog from "../../assets/moog.png";
+import ms1 from "../../assets/ms1.png";
+import korg from "../../assets/korg.png";
+import vocoder from "../../assets/vocoder.png";
 
-export default function Section() {
+export default function Products() {
   return (
     <SectionContainer>
       <SectionTitle>Products</SectionTitle>
       <CardsContainer>
         <Card>
-          <CardImage src={moog} />
-          <CardTitle>Title</CardTitle>
+          <CardImage src={ms1} />
+          <CardTitle>Behringer MS-1</CardTitle>
           <CardButton>Buy Me</CardButton>
           <CardLearnButton>Learn More</CardLearnButton>
         </Card>
         <Card>
-          <CardImage src={moog} />
-          <CardTitle>Title</CardTitle>
+          <CardImage src={vocoder} />
+          <CardTitle>Vocoder VC340</CardTitle>
           <CardButton>Buy Me</CardButton>
           <CardLearnButton>Learn More</CardLearnButton>
         </Card>
         <Card>
-          <CardImage src={moog} />
-          <CardTitle>Title</CardTitle>
+          <CardImage src={korg} />
+          <CardTitle>Korg MS-20</CardTitle>
           <CardButton>Buy Me</CardButton>
           <CardLearnButton>Learn More</CardLearnButton>
         </Card>

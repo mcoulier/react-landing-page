@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import Section from "./components/FirstSection/Section";
+import Section from "./components/Products/Products";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import About from "./components/About/About";
+import Showcase from "./components/Showcase/Showcase";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,7 +17,11 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: "#0070f3",
+    primary: "#E5771E",
+    secondary: "#e48e0c",
+    tertiary: "#5A3D2B",
+    accent: "#75C8AE",
+    alert: "#cc322b",
   },
   spacing: {
     small: "10px",
@@ -27,7 +31,7 @@ const theme = {
 };
 
 const AppWrapper = styled.div`
-  background: #854a20;
+  background-color: ${theme.colors.tertiary};
   display: flex;
   flex-flow: column;
 `;
@@ -40,7 +44,7 @@ function App() {
         <Navbar />
         <Hero />
         <Section />
-        <About />
+        <Showcase />
         <Footer />
       </ThemeProvider>
     </AppWrapper>

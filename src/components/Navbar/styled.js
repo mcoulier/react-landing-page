@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.header`
-  background: #854a20;
+  background: ${(props) => props.theme.colors.tertiary};
   height: 55px;
   display: flex;
   align-items: center;
@@ -17,4 +17,6 @@ export const Nav = styled.header`
 
 export const NavLogo = styled.img`
   padding-left: ${(props) => props.theme.spacing.small};
+  width: 45px;
+  height: 45px;
 `;
