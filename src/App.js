@@ -3,6 +3,7 @@ import Section from "./components/FirstSection/Section";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -27,6 +28,8 @@ const theme = {
 
 const AppWrapper = styled.div`
   background: #854a20;
+  display: flex;
+  flex-flow: column;
 `;
 
 function App() {
@@ -37,6 +40,7 @@ function App() {
         <Navbar />
         <Hero />
         <Section />
+        <About />
         <Footer />
       </ThemeProvider>
     </AppWrapper>

@@ -3,31 +3,36 @@ import {
   Card,
   CardImage,
   CardsContainer,
+  CardTitle,
+  CardButton,
+  CardLearnButton,
   SectionContainer,
   SectionTitle,
 } from "./styled";
-import { Button } from "../styles/Button";
 import moog from "../../assets/moog.png";
 
 export default function Section() {
   return (
     <SectionContainer>
-      <SectionTitle>About</SectionTitle>
+      <SectionTitle>Products</SectionTitle>
       <CardsContainer>
         <Card>
           <CardImage src={moog} />
-          Title
-          <Button>Buy Me</Button>
+          <CardTitle>Title</CardTitle>
+          <CardButton>Buy Me</CardButton>
+          <CardLearnButton>Learn More</CardLearnButton>
         </Card>
         <Card>
           <CardImage src={moog} />
-          Title
-          <Button>Buy Me</Button>
+          <CardTitle>Title</CardTitle>
+          <CardButton>Buy Me</CardButton>
+          <CardLearnButton>Learn More</CardLearnButton>
         </Card>
         <Card>
           <CardImage src={moog} />
-          Title
-          <Button>Buy Me</Button>
+          <CardTitle>Title</CardTitle>
+          <CardButton>Buy Me</CardButton>
+          <CardLearnButton>Learn More</CardLearnButton>
         </Card>
       </CardsContainer>
     </SectionContainer>

@@ -1,12 +1,12 @@
 import React from "react";
-import { MainContainer, Subtitle, Title } from "./styled";
-import hero from "../../assets/crowd.jpg"
+import { HeroButton, MainContainer, Subtitle, Title } from "./styled";
 
 export default function Hero() {
   return (
     <MainContainer>
-      <Title>TITLE</Title>
+      <Title>Synths</Title>
       <Subtitle>Baseline</Subtitle>
+      <HeroButton>Sign up</HeroButton>
     </MainContainer>
   );
 }
