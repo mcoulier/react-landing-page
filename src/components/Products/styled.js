@@ -23,17 +23,19 @@ export const CardsContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  width: 300px;
-  height: 400px;
-  border: 1px solid #cc322b;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   margin-left: ${(props) => props.theme.spacing.normal};
   margin-top: ${(props) => props.theme.spacing.normal};
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: ${(props) => props.theme.spacing.normal};
+  transition: 400ms ease-in-out;
+  background: #383028;
+  &:hover {
+    transform: translateY(-4px);
+  }
 `;
 
 export const CardImage = styled.img`
@@ -44,7 +46,7 @@ export const CardImage = styled.img`
 `;
 
 export const CardTitle = styled.h3`
-  padding-bottom: ${(props) => props.theme.spacing.large};
+  padding-bottom: ${(props) => props.theme.spacing.normal};
   color: ${(props) => props.theme.colors.primary};
 `;
 
@@ -54,11 +56,11 @@ export const CardButton = styled(Button)`
 
 export const CardLearnButton = styled(Button)`
   margin-top: ${(props) => props.theme.spacing.small};
-  background: ${(props) => props.theme.colors.accent};
-  color: #000;
+  background: #6ebaa2;
   &:hover {
     opacity: 1.2;
     cursor: pointer;
-    color: #fff;
+    border: none;
+    background: #74c4ab;
   }
 `;

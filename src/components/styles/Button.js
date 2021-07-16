@@ -7,7 +7,6 @@ export const Button = styled.button`
   border: none;
   border-radius: 5px;
   color: #fff;
-  margin-right: ${(props) => props.theme.spacing.small};
   &:hover {
     background: #db3e37;
     border: 1px solid #c35353;

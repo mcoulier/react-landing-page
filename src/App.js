@@ -1,17 +1,21 @@
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import Section from "./components/Products/Products";
+import Products from "./components/Products/Products";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Showcase from "./components/Showcase/Showcase";
+import { useInView } from "react-intersection-observer";
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+  }
+  button {
+    font-family: 'Raleway', sans-serif;
   }
 `;
 
@@ -37,14 +41,19 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
+
   return (
     <AppWrapper>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Navbar />
-        <Hero />
-        <Section />
+        <Navbar showBrand={inView} />
+        <Hero titleRef={ref} />
+        <Products title="Newest Products" />
         <Showcase />
+        <Products title="More Products" />
         <Footer />
       </ThemeProvider>
     </AppWrapper>

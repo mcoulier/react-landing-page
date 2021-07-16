@@ -1,30 +1,36 @@
 import React from "react";
 import {
-  AboutContainer,
+  ShowContainer,
   SectionTitle,
-  SplitWrapper,
-  LeftContent,
-  RightContent,
-  SectionImage,
+  ShowButton,
+  ContentWrapper,
+  GiftImage,
+  Input,
+  InputLabel,
+  InputContainer,
+  ShowText,
 } from "./styled";
-import synth from "../../assets/ms1.png";
+import gift from "../../assets/gift.png";
 
 export default function Products() {
   return (
-    <AboutContainer>
+    <ShowContainer>
       <SectionTitle>Showcase</SectionTitle>
-      <SplitWrapper>
-        <LeftContent>
-          Lorem Ipsum is slechts een proeftekst uit het drukkerij- en
-          zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze
-          bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak
-          met letters nam en ze door elkaar husselde om een font-catalogus te
-          maken.
-        </LeftContent>
-        <RightContent>
-          <SectionImage src={synth} alt="" />
-        </RightContent>
-      </SplitWrapper>
-    </AboutContainer>
+        <ShowText>
+          Podcasting operational change management inside of workflows to
+          establish a framework. Taking seamless key performance indicators
+          offline to maximise the long tail. Keeping your eye on the ball while
+          performing a deep dive on the start-up mentality to derive convergence
+          on cross-platform integration.
+        </ShowText>
+      <ContentWrapper>
+        <GiftImage src={gift} alt="" />
+        <InputContainer>
+          <InputLabel htmlFor="gift">E-mail</InputLabel>
+          <Input placeholder="morodor@email.com" name="gift" />
+          <ShowButton>Claim Gift</ShowButton>
+        </InputContainer>
+      </ContentWrapper>
+    </ShowContainer>
   );
 }

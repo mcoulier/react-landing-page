@@ -13,7 +13,7 @@ export const MainContainer = styled.section`
   flex-direction: column;
   border-bottom: 2px solid #cc322b;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     background-size: cover;
@@ -29,11 +29,12 @@ export const MainContainer = styled.section`
 `;
 
 export const Title = styled.h1`
+  font-family: "Zen Tokyo Zoo", cursive;
   text-align: center;
   margin: 0;
   font-size: 60px;
   color: ${(props) => props.theme.colors.alert};
-  padding-top: ${(props) => props.theme.spacing.normal};
+  margin-top: ${(props) => props.theme.spacing.large};
   position: relative;
   text-transform: uppercase;
   text-decoration: underline overline;
@@ -48,4 +49,5 @@ export const Subtitle = styled.h2`
 
 export const HeroButton = styled(Button)`
   position: relative;
+  margin-top: ${(props) => props.theme.spacing.large};
 `;
