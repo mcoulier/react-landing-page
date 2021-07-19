@@ -4,9 +4,9 @@ import { Button } from "../styles/Button";
 
 export const SectionContainer = styled.section`
   background-color: ${(props) => props.theme.colors.tertiary};
-  padding: ${(props) => props.theme.spacing.normal};
-  margin-top: ${(props) => props.theme.spacing.normal};
-  margin-bottom: ${(props) => props.theme.spacing.normal};
+  margin-bottom: ${(props) => props.theme.spacing.large};
+  margin-top: ${(props) => props.theme.spacing.normal};  
+  width: 100%;
 `;
 
 export const SectionTitle = styled.h2`
@@ -35,6 +35,9 @@ export const Card = styled.div`
   background: #383028;
   &:hover {
     transform: translateY(-4px);
+  }
+  @media (max-width: 600px) {
+    margin-left: 0;
   }
 `;
 

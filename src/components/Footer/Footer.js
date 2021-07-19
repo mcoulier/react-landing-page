@@ -1,6 +1,11 @@
 import React from "react";
-import { StyledFooter } from "./styled";
+import { StyledFooter, Terms } from "./styled";
 
 export default function Footer() {
-  return <StyledFooter></StyledFooter>;
+  return (
+    <StyledFooter>
+      <Terms>© 2021</Terms>
+      <Terms>Terms & Conditions</Terms>
+    </StyledFooter>
+  );
 }

@@ -6,19 +6,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Showcase from "./components/Showcase/Showcase";
 import { useInView } from "react-intersection-observer";
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
-  }
-  button {
-    font-family: 'Raleway', sans-serif;
-  }
-`;
-
 const theme = {
   colors: {
     primary: "#E5771E",
@@ -34,10 +21,27 @@ const theme = {
   },
 };
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    background-color: ${theme.colors.tertiary};
+  }
+  button {
+    font-family: 'Raleway', sans-serif;
+  }
+`;
+
 const AppWrapper = styled.div`
   background-color: ${theme.colors.tertiary};
   display: flex;
   flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
 `;
 
 function App() {
@@ -46,17 +50,19 @@ function App() {
   });
 
   return (
-    <AppWrapper>
+    <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Navbar showBrand={inView} />
         <Hero titleRef={ref} />
-        <Products title="Newest Products" />
-        <Showcase />
-        <Products title="More Products" />
+        <AppWrapper>
+          <Products title="Newest Products" />
+          <Showcase />
+          <Products title="More Products" />
+        </AppWrapper>
         <Footer />
       </ThemeProvider>
-    </AppWrapper>
+    </>
   );
 }
 
