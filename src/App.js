@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Showcase from "./components/Showcase/Showcase";
+import Mission from "./components/Mission/Mission";
 import { useInView } from "react-intersection-observer";
 
 const theme = {
@@ -60,6 +61,7 @@ function App() {
           <Showcase />
           <Products title="More Products" />
         </AppWrapper>
+        <Mission />
         <Footer />
       </ThemeProvider>
     </>

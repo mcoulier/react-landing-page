@@ -1,3 +1,6 @@
-# 
+# Responsive Landing Page
 
-Landing page using styled components
+Responsive landing page using styled components. 
+
+## Live preview
+https://synthcentral.netlify.app/
