@@ -21,7 +21,7 @@ export const MainContainer = styled.section`
     background-position: bottom;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.6;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     transform: scaleX(-1);
@@ -32,7 +32,7 @@ export const Title = styled.h1`
   font-family: "Zen Tokyo Zoo", cursive;
   text-align: center;
   margin: 0;
-  font-size: 60px;
+  font-size: 80px;
   color: ${(props) => props.theme.colors.alert};
   margin-top: ${(props) => props.theme.spacing.large};
   position: relative;
@@ -41,7 +41,7 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 22px;
+  font-size: 20px;
   color: ${(props) => props.theme.colors.secondary};
   text-align: center;
   position: relative;

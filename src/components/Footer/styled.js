@@ -11,7 +11,6 @@ export const StyledFooter = styled.footer`
   align-items: center;
   padding-left: 5px;
   padding-right: 5px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 `;
 
 export const Terms = styled.div`

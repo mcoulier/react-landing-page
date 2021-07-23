@@ -13,6 +13,7 @@ export const SectionTitle = styled.h2`
   color: ${(props) => props.theme.colors.accent};
   text-align: center;
   text-transform: uppercase;
+  font-size: ${(props) => props.theme.font.sectionTitle};;
 `;
 
 export const CardsContainer = styled.div`
